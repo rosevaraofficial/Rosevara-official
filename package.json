@@ -1,3 +1,4 @@
+
 {
   "name": "rosevara-women-fashion-store",
   "private": true,
@@ -15,13 +16,12 @@
     "@netlify/database": "latest",
     "@netlify/identity": "latest",
     "@netlify/server": "latest",
+    "@supabase/supabase-js": "latest",
     "drizzle-orm": "beta",
     "hono": "latest",
     "lucide-react": "latest",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@supabase/supabase-js": "latest",
-"zod": "^4.0.0"
     "zod": "^4.0.0"
   },
   "devDependencies": {
