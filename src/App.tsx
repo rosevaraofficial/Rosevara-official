@@ -1,4 +1,4 @@
-
+import { supabase } from "./supabase";
 import React, { useMemo, useState } from "react";
 
 const products = [
