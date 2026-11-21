@@ -35,9 +35,14 @@ export default function App() {
     setProfile(data);
   }
 
-  useEffect(() => {
-    let mounted = true;
+  
+useEffect(() => {
+    if (!supabase) {
+      setMessage("Supabase connection is missing. Please check Cloudflare variables.");
+      return;
+    }
 
+    let mounted = true;
     supabase.auth.getSession().then(({ data }) => {
       if (mounted && data.session?.user) {
         loadProfile(data.session.user.id);
